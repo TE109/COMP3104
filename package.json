@@ -15,14 +15,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\"",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
-  },
+  }, 
+  "homepage": "https://TE109.github.io/comp3104",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -33,6 +36,9 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ]
+    ]    
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
